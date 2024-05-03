@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Registration</title>
+<link rel="stylesheet" type="text/css" href="Register.css">
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+
+<script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+	<center>
+		<div class="wrapper">
+
+			<fieldset>
+				<form action="register" method="Post">
+					<h1>Registration Form</h1>
+					<table>
+						<tr>
+
+							<td><div class="input-box">
+				<input type="text" name="username" placeholder="Enter Customer Name" required /><i class='bx bxs-user'></i> 
+			</div></td>
+							<td><div class="input-box">
+				<input type="email" name="email" placeholder="Enter Valid Email" required /><i class='bx bx-envelope'></i>
+			</div></td>
+						</tr>
+						
+						<tr>
+							<td><div class="input-box">
+				<input type="password" name="password" placeholder="Enter Password" required /> 
+				<i class="fas fa-lock"></i>
+			</div></td>
+			<td><div class="input-box">
+				<input type="tel" name="mobile" placeholder="Enter Phone Number" required /> 
+				<i class='bx bxs-phone'></i>
+			</div></td>
+						</tr>
+						<tr>
+							<td><label>Gender</label></td>
+							<td><input type="radio" name="gender" value="Male">Male 
+							<input type="radio" name="gender" value="Female">Female
+							<input type="radio" name="gender" value="others">Others
+							</td>
+						</tr>
+						<tr>
+							<td><label>Role</label></td>
+							<td><input type="radio" name="role" value="Admin">Admin<br>
+								<input type="radio" name="role" value="Customer">Customer</td>
+						</tr>
+						<tr>
+
+				<td><label>Enter Address</label></td>
+							<td><div class="input-box">
+				<textarea  name="address" placeholder=" ADDRESS" required ></textarea>
+			</div></td>
+							
+						</tr>
+					</table>
+					<button>REGISTER</button>
+
+
+				</form>
+
+			</fieldset>
+		</div>
+	</center>
+</body>
+</html>

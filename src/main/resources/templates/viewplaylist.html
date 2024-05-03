@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>View Playlist</title>
+
+</head>
+<body>
+
+	<h2>View Playlist</h2>
+
+	<table border="1">
+		<thead>
+			<tr>
+				<th>ID</th>
+				<th>Name</th>
+				<th>Songs</th>
+				<th>Link</th>
+
+			</tr>
+		</thead>
+		<tbody>
+			<tr th:each="playlist : ${playlists}">
+				<td th:text="${playlist.id}"></td>
+				<td th:text="${playlist.name}"></td>
+
+				<td>
+					<ol>
+						<li th:each="song:${playlist.songs}">
+						    <span th:text="${song.name}">
+						    
+						    </span>
+					   </li>
+					</ol>
+			   </td>
+			   
+			   <td>
+					<ol>
+						<li th:each="song:${playlist.songs}">
+						   <audio controls th:src="${song.link}">
+				</audio>		    
+						    </span>
+					   </li>
+					</ol>
+			   </td>
+			   
+			</tr>
+		</tbody>
+	</table>
+
+</body>
+</html>

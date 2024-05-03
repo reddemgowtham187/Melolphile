@@ -1,0 +1,150 @@
+/* Register.css */
+
+/* Center the form */
+center {
+	margin-top: 50px;
+}
+
+td {
+	font-weight: bold;
+	font-size: 150%;
+	margin-top: 20%;
+	width:170px;
+}
+
+fieldset {
+	border-color: yellow;
+	margin-top: 3%;
+	border-weight: 20px;
+
+}
+
+body {
+	background-size: cover;
+	background-image: url('Images/reg1.jpeg');
+}
+/* Style the form container */
+div {
+	width: 100%;
+	margin: auto;
+
+}
+
+.input-box {
+	color: blue;
+	margin-left:47px;
+}
+
+/* Style the form heading */
+h1 {
+	text-align: center;
+	color: #00ff40;
+}
+
+.input-box i {
+  position: relative;
+  color:ivory;
+  left:-40px;
+  transform: translateY(15%);
+  font-size: 20px;
+}
+
+form {
+	color: ivory;
+	font-size:12px;
+}
+
+/* Style the table */
+table {
+	width: 75%;
+}
+
+/* Style form labels */
+label {
+	font-weight: bold;
+}
+
+.input-box input::placeholder {
+	color: #fff;
+}
+
+
+.wrapper .input-box input {
+	width: 100%;
+	height: 80%;
+	background: transparent;
+	border: none;
+	outline: none;
+	border: 2px solid white;
+	border-radius: 40px;
+	font-size: 16px;
+	color: #ffffff ;
+	
+}
+
+.input-box textarea {
+	border: 2px solid white;
+	border-radius: 10px;
+	font-size: 17px;
+	color: #ffffff;
+	
+}
+
+.input-box textarea::placeholder {
+	color: #fff;
+}
+/* Style form inputs */
+input[type="text"],  input[type="password"], input[type="email"],input[type="textarea"], input[type="tel"],
+	textarea {
+	align: center;
+	border-radius: 20px;
+	padding: 8px;
+	margin-left: -50px;
+	margin-bottom: 8px;
+	width:100%;
+	background: transparent;
+	box-sizing: border-box;
+
+	/* Include padding and border in the element's total width and height */
+}
+
+/* Style radio buttons */
+input[type="radio"] {
+	margin-right:2px;
+}
+
+/* Style the submit button */
+button {
+	width: 60%;
+	padding: 10px;
+	background-color: #c0c0c0;
+	margin-left: 2%;
+	color: ivory;
+	border-color: red;
+	cursor: pointer;
+	border-radius: 20px;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+/* Hover effect for the submit button */
+button:hover {
+	background-color: #45a049;
+}
+
+.wrapper {
+  width: 700px;
+  height:200;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+  color: #fff;
+  border-radius: 10px;
+  padding: 30px 40px;
+}
+.wrapper h1 {
+  font-size: 36px;
+  text-align: center;
+}
