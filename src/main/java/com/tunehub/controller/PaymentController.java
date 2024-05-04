@@ -88,7 +88,7 @@ public class PaymentController {
 		
 		userService.updateUser(user);
 
-		return "customerhome";
+		return "login";
 	}
 
 	@GetMapping("/payment-failure")

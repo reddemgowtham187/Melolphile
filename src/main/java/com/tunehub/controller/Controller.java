@@ -1,12 +1,17 @@
 package com.tunehub.controller;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import com.tunehub.entity.Song;
 import com.tunehub.entity.User;
+import com.tunehub.service.SongService;
 import com.tunehub.service.UserService;
 
 import jakarta.servlet.http.HttpSession;
@@ -17,6 +22,8 @@ public class Controller {
 	@Autowired
 	UserService us;
 
+	@Autowired
+	SongService ss;
 	@PostMapping("/register")
 	
 	
@@ -36,7 +43,7 @@ public class Controller {
 	
 	@PostMapping("/validate")
 	public String validate(@RequestParam("email") String email,
-			@RequestParam("password") String password, HttpSession session) {
+			@RequestParam("password") String password, HttpSession session,Model model) {
 		
 		if(us.validUser(email,password)==true) {
 			session.setAttribute("email", email);
@@ -47,6 +54,16 @@ public class Controller {
 				return "AdminHome";
 			}
 			else {
+				User user = us.getUser(email);
+				boolean userstatus = user.getPremium();
+				
+				
+				List<Song> songslist=ss.fetchAllSongs();
+		   		model.addAttribute("songs",songslist);
+
+				model.addAttribute("ispremium" ,userstatus);
+				
+
 				return "CustomerHome";
 			}
 			
