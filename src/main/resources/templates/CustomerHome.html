@@ -2,9 +2,11 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="customerhome.css">
 <title>CUSTOMER HOME</title>
 </head>
-<body>
+<body >
+
 	<p>Customer Home</p>
 	<br>
 	<br>
@@ -15,11 +17,11 @@
 
 <div th:unless="${ispremium}" class="non-premium">
 	<form action="pay">
-		<input type="submit" value="GET PREMIUM">
+		<input class="wrapper" type="submit" value="GET PREMIUM">
 	</form>
 	<br>
 	<form action="logout">
-		<input type="submit" value="LOGOUT">
+		<input class="wrapper" type="submit" value="LOGOUT">
 	</form>
 </div>
 

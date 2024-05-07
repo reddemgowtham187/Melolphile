@@ -23,6 +23,10 @@ public class NavController {
 	public String song() {
 		return "Song"; 
 	}
+	@GetMapping("/forgotpassword")
+	public String forgotPassword() {
+		return "forgotpassword";
+	}
 	
 }
 	

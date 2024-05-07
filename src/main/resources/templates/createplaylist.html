@@ -3,21 +3,31 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Create Playlist</title>
+<link rel="stylesheet" type="text/css" href="createplaylist.css">
 </head>
 <body>
-<p>Create Playlist</p>
+<fieldset>
+	<center>
+		<div class="wrapper">
 
-<form action="addplaylist" method="post">
-<label>PlayList Name</label>
-<input type="text" name="name">
-<br>
-<div th:each="song:${songs}">
-    <input type="checkbox" th:name="songs" th:value="${song.id}">
-    <label th:text="${song.name}"></label>
-</div>
+			<form action="addplaylist" method="post">
+				<h2>Create Playlist</h2>
+				<br>
+				<div class="input-box">
+					<input type="text" name=name placeholder="Enter Playlist Name">
+				</div>
 
-<input type="submit" value="ADD PLAYLIST">
+				<div th:each="song:${songs}"><br>
+					<input type="checkbox" th:name="songs" th:value="${song.id}">
+					<label th:text="${song.name}"></label>
+				</div><br>
 
-</form>
+
+				<button type="submit" class="btn">ADD PLAYLIST</button>
+
+			</form>
+		</div>
+	</center>
+	</fieldset>
 </body>
 </html>

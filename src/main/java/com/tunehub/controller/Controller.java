@@ -78,6 +78,18 @@ public class Controller {
 	 session.invalidate();
 		return "login";
 	}
+	
+	@PostMapping("/updatepassword")
+	public String updatePassword(@RequestParam ("email") String email,@RequestParam("password") String password ) {
+		boolean isPresent=us.isPresent(email);
+		if(isPresent) {
+			us.updatePassword(email,password);
+		}
+		else {
+			return "forgotpassword";
+		}
+		return "login";
+	}
 	}
 
 	

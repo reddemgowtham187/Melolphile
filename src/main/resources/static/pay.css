@@ -1,0 +1,42 @@
+body{
+	background-image: url('Images/loginbg.jpeg');
+	background-size:cover;
+	background-color: green;
+	
+}
+ul{
+	align:center;
+	color:ivory;
+	font-size:20px;
+}
+
+button {
+	width: 40%;
+	padding: 10px;
+	background-color:ivory;;
+	margin-left: 4%;
+	color:purple;
+	border-color:blue;
+	cursor: pointer;
+	border-radius: 20px;
+	font-weight: bold;
+	font-size: 20px;
+	
+}
+button:hover{
+	color:magenta;
+	background-color: green;
+}
+.wrapper {
+  width: 500px;
+  height:200;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  
+
+  color: #80ff80;
+  border-radius: 10px;
+  padding: 30px 40px;
+}

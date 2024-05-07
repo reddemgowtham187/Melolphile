@@ -1,25 +1,102 @@
-form{
-margin-top:5%;
-	height: 21%;
-}
-input {
-	width: 20%;
-	padding: 10px;
-	margin-left: 2%;
-	background-color:ivory;
-	color: blue;
-	border-color: red;
-	cursor: pointer;
-	border-radius: 20px;
-	font-weight: bold;
-	font-size: 20px;
+
+form {
+	border-color: yellow;
+	margin-top: 3%;
+	border-weight: 20px;
+	
 }
 
-input:hover{
+h2{
+	margin-top:3%;
+	color:ivory;
+	font-size:50px;
+}
+.wrapper {
+
+	background: transparent;
+	border: 2px solid yellow;
+	backdrop-filter: blur(20px);
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+	align: center; 
+	border-radius : 20px; 
+	
+	
+	box-sizing: border-box;
+	color: #ff0080;
+	border-radius: 10px;
+	padding: 8px;
+	width: 50%;
+	height:20%;
+	background: transparent;
+	
+}
+
+
+.button {
+  align-items: center;
+  background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+  border: 0;
+  border-radius: 8px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  display: flex;
+  font-family: Phantomsans, sans-serif;
+  font-size: 20px;
+  justify-content: center;
+  line-height: 1em;
+ width:40%;
+  padding: 19px 24px;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.button:active,
+.button:hover {
+  outline: 0;
+}
+
+@media (min-width: 768px) {
+  .button-63 {
+    font-size: 24px;
+    min-width: 196px;
+  }
+}
+	
+
+
+
+.wrapper {
+	
+	
+	
+	background: transparent;
+	border: 2px solid yellow;
+	backdrop-filter: blur(20px);
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+	align: center; 
+	border-radius : 20px; 
+	margin-bottom : 8px; 
+	
+	box-sizing: border-box;
+	color: #ff0080;
+	border-radius: 10px;
+	padding: 8px;
+	width: 50%;
+	height:30%;
+	background: transparent;
+	
+}
+
+input:hover {
 	background-color: green;
 }
 
-body{
-	background-image: url('Images/admin.jpeg');
+body {
+	background-image: url('Images/loginbg.jpeg');
 	background-size: cover;
 }

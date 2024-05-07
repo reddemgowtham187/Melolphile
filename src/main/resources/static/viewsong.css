@@ -1,3 +1,6 @@
+body{
+				background-color: black;
+}
 table {
     border-collapse: collapse;
     width: 100%;
@@ -7,18 +10,18 @@ table {
 th, td {
     border: 1px solid #ddd;
     padding: 8px;
-    text-align: left;
+    text-align: center;
     
     
 }
 
 th {
-    background-color: magenta;
-    border-radius:30px;
+    background-color:blue;
+   
 }
 
 tr:nth-child(even) {
-    background-color: #80ffff;
+    background-color:rgb(128, 64, 64);
 }
 
 tr:hover {
@@ -42,9 +45,8 @@ tr:hover {
     width: 100%;
 }
 th{
-color:blue;
+color:magenta;
 }
-audio{
-color:orange;}
+
 td{
-color:red;}
+color:ivory;}

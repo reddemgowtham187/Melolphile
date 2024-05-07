@@ -59,6 +59,25 @@ public class UserImplementation implements UserService {
 	public void updateUser(User user) {
         ur.save(user)	;	
 	}
+	@Override
+	public boolean isPresent(String email) {
+		User user=ur.findByEmail(email);
+		if(user!=null) {
+			return true;
+		}
+		return false;
+	}
+	@Override
+	public void updatePassword(String email, String password) {
+		User users=ur.findByEmail(email);
+
+
+		users.setPassword(password);
+		ur.save(users);
+
+	}
+	
+	
 	
 	
 	

@@ -1,22 +1,28 @@
 body {
-    background-image: url('Images/music.jpg'); /* Replace 'music_image.jpg' with the actual path to your music image */
-    background-size: cover;
+    background-image: url('Images/ss1.png'); /* Replace 'music_image.jpg' with the actual path to your music image */
+    background-size: 160%;
     background-position: center;
     font-family: Arial, sans-serif; /* Default font family */
-    margin: 10%; /* Remove default body margin */
+    margin: 14%; /* Remove default body margin */
     padding: 0; /* Remove default body padding */
+    margin-top:3%
 }
-p{
-	font-size:30px;
-	color:blue;
-	font-family:MV Boli}
+
+img{
+	border-radius: 60px;
+	margin-bottom: -80px;
+	position: absolute;
+}
 
 .center {
     text-align: center;
-    margin-left:50% /* Adjust as needed to center content vertically */
+   
+   margin-left:65% /* Adjust  as needed to center content vertically */
+    
 }
 
 .button {
+	
     background-color: purple;
     border: none;
     padding: 10px 20px;
